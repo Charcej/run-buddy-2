@@ -72,6 +72,8 @@ footer a {
     color: #024e76;
 }
 
+/*This is where I made too much room to fit form and it affects the other sections so I have to backtrack later and fix
+I PROBABLY HAVE TO INCLUDE THIS INTO A SPECIFIC SECTION (THE FORM) SO IT DOESN'T AFFECT OTHER SECTIONS*/
 section {
     padding: 60px;
     padding-bottom: 360px;
