@@ -44,11 +44,6 @@ header nav ul li a {
     font-size: 16px;
 }
 
-h3 {
-    font-size: 20px;
-    margin: 0;
-}
-
 footer {
     background: #fce138;
     width: 100%;
@@ -76,8 +71,9 @@ footer a {
 I PROBABLY HAVE TO INCLUDE THIS INTO A SPECIFIC SECTION (THE FORM) SO IT DOESN'T AFFECT OTHER SECTIONS
 Also look at hero and hero form section stuff in CSS*/
 section {
-    padding: 60px;
-    padding-bottom: 360px;
+   
+    padding-top: 50px;
+    padding-bottom: 400px;
 }
 
 /* Hero Style Start */
@@ -112,11 +108,12 @@ section {
 .hero-form {
     border: 3px solid #024e76;  
     background-color: #fce138; 
-    padding:20px;
+    padding:10px;
     width:500px;
     color: #024e76; 
     position: absolute;
-    bottom: 3px;
+    top: 15px;
+    bottom: 5px;
     right: 70px;
 }
 
