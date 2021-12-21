@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -11,8 +11,9 @@ body {
 }
 
 /* apply styles to <header> */
+/* header / nav bar styles start */
 header {
-    padding: 10px 35px;
+    padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
@@ -21,9 +22,9 @@ header {
 
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
 }
 
 header a {
@@ -32,7 +33,7 @@ header a {
 }
 
 header nav {
-    margin: 12px 0;
+    margin: 7px 0;
 }
 
 header nav ul {
@@ -49,13 +50,17 @@ header nav ul li a {
     font-size: 1.5vw;
 }
 
+/* header / navbar styles end */
+
+/* footer styles start */
+
 footer {
     background: #fce138;
-    width: 100%;
-    padding: 34px 35px;
+    padding: 40px 35px;
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
+    width: 100%;
 }
 
 footer h2 {
@@ -73,13 +78,11 @@ footer a {
     color: #024e76;
 }
 
+/* end footer styles */
+
 /*This is where I made too much room to fit form and it affects the other sections so I have to backtrack later and fix
 I PROBABLY HAVE TO INCLUDE THIS INTO A SPECIFIC SECTION (THE FORM) SO IT DOESN'T AFFECT OTHER SECTIONS
 Also look at hero and hero form section stuff in CSS --- also it's the background picture that seemsed to go wrong initially*/
-section {
-    padding-top: 50px;
-    padding-bottom: 400px;
-}
 
 /* Hero Style Start */
 .hero {
@@ -105,10 +108,18 @@ section {
     font-size: 55px;
     color: #fce138;
 }
-/* Hero Style End */
+
+.hero-form {
+    border: 3px solid #024e76;  
+    background-color: #fce138; 
+    padding:20px;
+    color: #024e76; 
+    width: 40%;
+    margin: 3.5%;
+}
 
 .hero-form h3 {
-    font-size:22px;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -126,17 +137,6 @@ section {
     margin-bottom: 15px;
 }
 
-.hero-form {
-    border: 3px solid #024e76;  
-    background-color: #fce138; 
-    padding:10px;
-    height: 400px;
-    color: #024e76; 
-    top: 15px;
-    width: 40%;
-    margin: 3.5%;
-}
-
 .hero-form label {
     margin: 0 5px;
 }
@@ -151,23 +151,12 @@ section {
 
 /* HERO STYLES END */
 
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center
-}
-
-.steps {
-    background: #fce138;
-}
+/* section title styles start */
 
 .section-title {
     font-size: 55px;
+    border-bottom: 3px solid;
     color: #024e76;
-    border-bottom: 3 px solid;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -182,6 +171,14 @@ section {
     border-color: #39a6b2;
 }
 
+/* section title styles end */
+
+/* what you do styles start */
+
+.steps {
+    background: #fce138;
+}
+
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -193,7 +190,17 @@ section {
     justify-content: space-between;
 }
 
-.steps div {
+.step h3 {
+    color: #024e76;
+    font-size: 46px;
+    flex: 1 30%;
+}
+
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .step-img {
@@ -203,11 +210,6 @@ section {
 
 .step-img img {
     max-width: 100%;
-}
-.step h3 {
-    color: #024e76;
-    font-size: 46px;
-    flex: 2 70%;
 }
 
 .step-text {
@@ -225,14 +227,9 @@ section {
     color: #024e76;
 }
 
-.steps span {
-}
+/* what you do styles end */
 
-.step-info {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+/* meet the trainers start */
 
 .trainers {
     width: 100%;
@@ -244,9 +241,9 @@ section {
 
 .trainer {
     margin: 20px;
+    flex: 1;
     background: #024e76;
     color: #fce138;
-    flex: 1;
 }
 
 .trainer img {
@@ -272,19 +269,14 @@ section {
     font-size: 17px;
 }
 
-.text-left {
-    text-align: left;
-}
+/* trainer styles end */
 
-.text-right {
-    text-align: right;
-}
+/* reach out styles start */
 
-.flex-row {
-    display: flex;
-}
+
 
 /* REACH OUTSTYLES START */
+
 .contact {
     background-color: #024e76;  
 }
@@ -298,31 +290,6 @@ section {
 .contact-info > * {
     flex: 1;
     margin: 15px;
-}
-
-.contact-form input, .contact-form textarea {
-    border: 1PX SOLID #024E76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-.contact-form button {
-    width: 100%;
-    border: none;
-    background: #fce138;
-    color: #024e76;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-}
-
-.contact h2 {
-    color: #fce138;
 }
 
 .contact-info iframe {
@@ -345,14 +312,41 @@ section {
     font-style: normal;
 }
 
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
 .contact-info a {
     color: #fce138;
 }
 
-/* REACH OUT STYLES END */
+/* Utlities */
 
+.text-left {
+    text-align: left;
+}
 
+.text-right {
+    text-align: right;
+}
 
-
-
-
+.flex-row {
+    display: flex;
+}
