@@ -53,17 +53,18 @@ footer {
     background: #fce138;
     width: 100%;
     padding: 34px 35px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -74,7 +75,7 @@ footer a {
 
 /*This is where I made too much room to fit form and it affects the other sections so I have to backtrack later and fix
 I PROBABLY HAVE TO INCLUDE THIS INTO A SPECIFIC SECTION (THE FORM) SO IT DOESN'T AFFECT OTHER SECTIONS
-Also look at hero and hero form section stuff in CSS*/
+Also look at hero and hero form section stuff in CSS --- also it's the background picture that seemsed to go wrong initially*/
 section {
     padding-top: 50px;
     padding-bottom: 400px;
@@ -83,10 +84,26 @@ section {
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600 px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 /* Hero Style End */
 
@@ -114,12 +131,10 @@ section {
     background-color: #fce138; 
     padding:10px;
     height: 400px;
-    width:500px;
     color: #024e76; 
-    position: absolute;
     top: 15px;
-    bottom: 5px;
-    right: 70px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form label {
