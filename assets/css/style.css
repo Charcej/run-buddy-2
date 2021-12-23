@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #fce160;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +12,7 @@
 
 body {
     /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -14,7 +20,7 @@ body {
 /* header / nav bar styles start */
 header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -33,13 +39,13 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: #fce138;
+    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
-    color: #fce138;
+    color: var(--primary-color);;
 }
 
 header nav {
@@ -62,8 +68,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -73,7 +79,7 @@ header nav ul li a:hover {
 /* footer styles start */
 
 footer {
-    background: #fce138;
+    background: var(--primary-color);
     padding: 40px 35px;
     display: flex;
     justify-content: space-between; 
@@ -82,7 +88,7 @@ footer {
 }
 
 footer h2 {
-    color: #024e76;
+    color: var(--secondary-color)
     font-size: 30px;
     margin: 0;
 }
@@ -93,7 +99,7 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--secondary-color);
 }
 
 /* end footer styles */
@@ -127,15 +133,15 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
-    color: #fce138;
+    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
-    border: 3px solid #024e76;  
+    border: 3px solid var(--secondary-color);
     background-color: rgba(252,225,56,0.8); 
     padding:20px;
-    color: #024e76; 
+    color: var(--secondary-color);
     width: 40%;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -152,11 +158,11 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -173,8 +179,8 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .hero-form button {
-    color: #fce138;
-    background-color: #024e76;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -182,7 +188,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .hero-form button:hover {
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -201,7 +207,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
     height: 20px;
     width: 20px;
     background: rgba(255, 255, 255, 0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     position: absolute;
     top: -4px;
     left: -30px;
@@ -216,7 +222,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #024e76;
+    background: var(--secondary-color);
     position: absolute;
     left: -29px;
     top: -3px;
@@ -227,8 +233,8 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
     content:"";
     height: 6px;
     width: 14px;
-    border-left: 2px solid #024e76;
-    border-bottom: 2px solid #024e76;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     position: absolute;
     left: -26px;
     top: 1px;
@@ -250,7 +256,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 .section-title {
     font-size: 48px;
     border-bottom: 3px solid;
-    color: #024e76;
+    color: var(--secondary-color);
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -258,11 +264,11 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--primary-color);
 }
 
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
 
 /* section title styles end */
@@ -276,7 +282,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 
 .steps {
     padding-top: 30px;;
-    background: #fce138;
+    background: var(--primary-color);
 }
 
 .step {
@@ -287,7 +293,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
 }
 
 .step:last-child {
@@ -295,11 +301,11 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .step:nth-child(even) {
-    border-bottom: 1px solid #39a6b2;;
+    border-bottom: 1px solid var(--tertiary-color);;
 }
 
 .step h3 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
 }
@@ -325,14 +331,14 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .step-text p {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-size: 18px;
 }
 
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
-    color: #024e76;
+    color: var(--secondary-color);
 }
 
 /* what you do styles end */
@@ -350,8 +356,8 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 .trainer {
     margin: 20px;
     flex: 1;
-    background: #024e76;
-    color: #fce138;
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .trainer img {
@@ -386,7 +392,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 /* REACH OUTSTYLES START */
 
 .contact {
-    background-color: #024e76;  
+    background-color: var(--secondary-color);
 }
 
 .contact-info {
@@ -409,7 +415,7 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .contact-info h3 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 32px;
 }
 
@@ -421,11 +427,11 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -441,8 +447,8 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 .contact-form button {
     width: 100%;
     border: none;
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -450,12 +456,12 @@ Also look at hero and hero form section stuff in CSS --- also it's the backgroun
 }
 
 .contact-form button:hover {
-    color: #fce138;
-    background: #39a6b2;
+    color: var(--primary-color);
+    background: var(--tertiary-color);
 }
 
 .contact-info a {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 /* Utlities */
